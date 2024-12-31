@@ -122,54 +122,58 @@ position: relative;
 
 
 @media (max-width: 768px) {
-    /* Hide the top-right section */
+    
     .top-right {
         display: none;
     }
 
-    /* Align logo to the left */
+   
     .logo {
         flex: 1;
         text-align: left; 
     }
 
-    /* Stack nav items vertically */
+  
     #nav {
-        flex-direction: column;
+        flex-direction: row;
         align-items: flex-start;
+        padding: 5px 20px;
     }
 
-    /* Stack navbar below items */
+  
     #nav-below {
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
         padding: 10px;
         height: auto;
     }
 
-    /* Hide links in navbar */
+
     .links {
         display: none;
     }
 
-    /* Adjust logo positioning */
+
     .nav-logo {
-        position: static;
-        margin: 0;
+        /* position: absolute; */
+        margin-right: 10px;
+       /* padding-top: 10px;
+        left: 0; */
         text-align: center;
     }
 
-    /* Style Donate button */
+  
     #donate {
-        margin: 10px 0;
-        width: 60%;
-        align-self: center;
+    
+        white-space: nowrap;
+       
+        
         font-size: 16px;
         padding: 12px;
     }
 
-    /* Adjust banner styling */
+    
     #banner {
         height: auto;
     }
@@ -181,12 +185,12 @@ position: relative;
 }
 
 @media (max-width: 480px) {
-    /* Adjust nav padding */
+    
     #nav {
         padding: 10px;
     }
 
-    /* Smaller font sizes for nav items */
+    
     #nav h4 {
         font-size: 12px;
     }
@@ -195,17 +199,15 @@ position: relative;
         font-size: 16px;
     }
 
-    /* Adjust nav-below padding */
     #nav-below {
         padding: 10px;
     }
 
-    /* Adjust link font sizes */
     .links a {
         font-size: 12px;
     }
 
-    /* Adjust Donate button size */
+   
     #donate {
         font-size: 12px;
         padding: 8px 16px; 
