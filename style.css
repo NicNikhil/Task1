@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', 'sans-serif';
+}
+
+html,body{
+    height: 100%;
+    width:100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+#nav{
+    
+    /* background-color: #b7302a; */
+    background-color: #b71c1c;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+padding: 5px 20px;
+margin: 0 10px;
+color: white;
+position: relative;
+}
+
+#nav h4{
+    
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 14px;
+    
+}
+
+#nav i{
+   
+   cursor: pointer;
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.navbar-left{
+    display: flex;
+    align-items: center;
+}
+
+.top-right{
+    display: flex;
+    align-items: center;
+}
+
+#nav-below{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    height: 80px;
+    padding: 10px 50px;
+    margin: 0 10px;
+}
+
+.links a{
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    
+    font-size: 16px;
+    font-weight: 600;
+}
+.navbar-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.nav-logoo{
+    height: 30px;
+    margin-right: 10px;
+}
+#Affiliated{
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+}
+.nav-logo{
+    height: 60px;
+    
+    position: absolute;
+    left: 20px;
+    right: 50px;
+    margin-right: 10px;
+}
+
+#donate{
+    padding: 10px 20px;
+    background-color: #b71c1c;
+    color: white;
+    border: none;
+    border-radius:5px ;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    white-space: nowrap;
+    
+}
+#banner{
+    background-color: white;
+    height: 480px;
+    width: 100%;
+}
+.banner-banner{
+    height: 480px;
+    width: 100%;
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', 'sans-serif';
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+/* Navigation */
+#nav {
+    background-color: #b71c1c;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+    margin: 0 10px;
+    color: white;
+    position: relative;
+}
+
+#nav h4 {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 14px;
+}
+
+#nav i {
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.top-right {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Secondary Navigation */
+#nav-below {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    height: 80px;
+    padding: 10px 50px;
+    margin: 0 10px;
+    flex-wrap: wrap;
+}
+
+.links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.navbar-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.nav-logo {
+    height: 60px;
+    margin-right: 10px;
+}
+
+#donate {
+    padding: 10px 20px;
+    background-color: #b71c1c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+/* Banner */
+#banner {
+    background-color: white;
+    height: 480px;
+    width: 100%;
+}
+
+.banner-banner {
+    height: 480px;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Hide the top-right section */
+    .top-right {
+        display: none;
+    }
+
+    /* Align logo to the left */
+    .logo {
+        flex: 1;
+        text-align: left; 
+    }
+
+    /* Stack nav items vertically */
+    #nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* Stack navbar below items */
+    #nav-below {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 10px;
+        height: auto;
+    }
+
+    /* Hide links in navbar */
+    .links {
+        display: none;
+    }
+
+    /* Adjust logo positioning */
+    .nav-logo {
+        position: static;
+        margin: 0;
+        text-align: center;
+    }
+
+    /* Style Donate button */
+    #donate {
+        margin: 10px 0;
+        width: 60%;
+        align-self: center;
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    /* Adjust banner styling */
+    #banner {
+        height: auto;
+    }
+
+    .banner-banner {
+        height: auto;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Adjust nav padding */
+    #nav {
+        padding: 10px;
+    }
+
+    /* Smaller font sizes for nav items */
+    #nav h4 {
+        font-size: 12px;
+    }
+
+    #nav i {
+        font-size: 16px;
+    }
+
+    /* Adjust nav-below padding */
+    #nav-below {
+        padding: 10px;
+    }
+
+    /* Adjust link font sizes */
+    .links a {
+        font-size: 12px;
+    }
+
+    /* Adjust Donate button size */
+    #donate {
+        font-size: 12px;
+        padding: 8px 16px; 
+        width: 70%; 
+    }
+}
